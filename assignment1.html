@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>მთავარი გვერდი</title>
+	<title>Main page</title>
 </head>
 <body>
 <?php
@@ -11,31 +11,31 @@ $y = 19;
 $z = 29;
 
 
-// დაადგენს x რიცხვი არის თუ არა 0 < x 17 დიაპაზონში მოთავსებული. 
-if ($x > 0 && $x < 17) echo "$x არის მოცემულ შუალედში<br>";
-	else echo "$x არ არის მოცემულ შუალედში<br>";
+// Determines the x number is in the 0 <x 17 range. 
+if ($x > 0 && $x < 17) echo "$ X is in the interval<br>";
+	else echo "$x $ X isn't in the interval<br>";
 
-// დაადგენს x რიცხვი არის თუ არა 10 x < 19 დიაპაზონში მოთავსებული. 
-if ($x > 10 && $x < 19) echo "$x არის მოცემულ შუალედში<br>";
-	else echo "$x არ არის მოცემულ შუალედში<br>";
+// Determines the x number is in 10 > x <19 range.
+if ($x > 10 && $x < 19) echo "$x is in the range<br>";
+	else echo "$x isn't in the range<br>";
 
-// დაადგენს x რიცხვი არის თუ არა 25-ზე ნაკლები ან 100-ზე მეტი. 
-if ($x < 25 && $x > 100) echo "$x არის მოცემულ შუალედის გარეთ<br>";
-	else echo "$x არის მოცემულ შუალედში<br>";
+// Determines the x number is less than 25 or more than 100.
+if ($x < 25 && $x > 100) echo "$x is out of the range<br>";
+	else echo "$x is in the range<br>";
 
-// დაადგენს x რიცხვი არის თუ არა 30-ის ტოლი ან 5-ზე ნაკლები.
-if ($x == 30 && $x < 5) echo "$x აკმაყოფილებს მოცემულ პირობას<br>";
-	else echo "$x არ აკმაყოფილებს მოცემულ პირობას<br>";
+// Determines whether x is equal to 30 or less than 5.
+if ($x == 30 && $x < 5) echo "$x satisfies this conditions<br>";
+	else echo "$x doesn't satisfy this conditions<br>";
 
-// დაადგენს ორივე რიცხვი არის თუ არა დადებითი. 
-if ($x > 0 && $y > 0) echo "ორივე რიცხვი დადებითია<br>";
-	else echo "არ არის ორივე რიცხვი დადებითი<br>";
+// Determines whether both numbers are positive or not. 
+if ($x > 0 && $y > 0) echo "Both numbers are positive<br>";
+	else echo "Both numbers aren't positive<br>";
 
-// დაადგენს სამივე რიცხვი არის თუ არა 7-ის ჯერადი.
+// Determines all three numbers are 7 multiplies or not...
 if ($x % 7 == 0 && $y % 7 == 0 && $z % 7 == 0){
-	echo "სამივე რიცხვი 7-ის ჯერადია<br>";
+	echo "all three numbers are 7 multiplies<br>";
 } else {
-	echo "არ არის სამივე რიცხვი 7-ის ჯერადი<br>";
+	echo "all three numbers aren't 7 multiplies<br>";
 }
 
 ?>
